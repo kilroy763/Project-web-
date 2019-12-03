@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
@@ -16,7 +16,9 @@
 <body>
 
     <header>
+       
         <i id="test" class="fas fa-hand-middle-finger fa-2x"></i>
+        
         <nav class="nav1">
             <ul class="navkopjes1">
                 <li> <a href="">Blokkenschema </a> </li>
@@ -48,88 +50,109 @@
                 <li> <a href=""> Achtergrond</a></li>
                 <li><a href="">Green En Clean </a></li>
                 <li><a href=""> Over LowLands</a></li>
-                ///overlay geven ipv nieuwe navbar//
-
             </ul>
         </nav>
     </header>
+    
+    
     <main>
-        <div class="top">
-
-
-            <p class="kop">LOWLANDS 2019
-                16+17+18 AUGUSTUS</p>
-
+        <section class="top">
+            <h1 class="kop">LOWLANDS 2019 16+17+18 AUGUSTUS</h1>
             <button type="button" onclick="alert('Wat dacht je nou zelf? !UITVERKOCHT!')" class="buttonkop">Koop nu je tickets!</button>
-        </div>
-        <div class="rollen">
-            <div class="afbeelding1">
+        </section>
+
+        <section class="rollen">
+            <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
-                <p>Beste MC die nog leeft.</p>
-                <h1>EMINEM</h1>
+                <q>Beste MC die nog leeft.</q>
+                <h2>EMINEM</h2>
                 <img src="img/eminem.jpg" alt="">
-            </div>
+            </article>
 
-            <div class="afbeelding1">
+            <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
-                <p>Terug van weggeweest</p>
-                <h1>2Pac</h1>
+                <q>Terug van weggeweest</q>
+                <h2>2Pac</h2>
                 <img src="img/2pac.jpg" alt="">
-            </div>
-            <div class="afbeelding1">
+            </article>
+            
+            <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
-                <p>De hedendaagse G.O.A.T</p>
-                <h1>MAC MILLER</h1>
+                <q>Gone to soon</q>
+                <h2>MAC MILLER</h2>
                 <img src="img/mac.jpg" alt="">
-            </div>
-            <div class="afbeelding1">
+            </article>
+            
+            <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
-                <p>Jonko man</p>
-                <h1>SNOOP DOGG</h1>
+                <q>Jonko man</q>
+                <h2>SNOOP DOGG</h2>
                 <img src="img/snoopdogg.jpg" alt="">
-            </div>
-        </div>
+            </article>
+        </section>
 
-        <div class="rollen">
-            <div class="afbeelding1">
+       
+        <section class="rollen">
+            <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
-                <p>De LEGENDARISCHE groep</p>
-                <h1>N.W.A</h1>
+                <q>De LEGENDARISCHE groep</q>
+                <h2>N.W.A</h2>
                 <img src="img/NWA.jpg" alt="">
-            </div>
+            </article>
 
-            <div class="afbeelding1">
+            <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
-                <p>Zeldzaam goed</p>
-                <h1>KendrickLamar</h1>
+                <q>Zeldzaam goed</q>
+                <h2>KendrickLamar</h2>
                 <img src="img/kendrick.jpg" alt="">
-            </div>
-            <div class="afbeelding1">
+            </article>
+            
+            <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
-                <p>Wet Dreamz?</p>
-                <h1>J. Cole</h1>
+                <q>Wet Dreamz?</q>
+                <h2>J. Cole</h2>
                 <img src="img/jcole.jpg" alt="">
-            </div>
-            <div class="afbeelding1">
+            </article>
+            
+            <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
-                <p>Sorry, Budget was op</p>
-                <h1>Lil Pump</h1>
+                <q>Sorry, Budget was op</q>
+                <h2>Lil Pump</h2>
                 <img src="img/poeop.jpg" alt="">
-            </div>
-        </div>
+            </article>
+        </section>
     </main>
 </body>
 
+<footer>
+    <section class="social">
+        <h3>Volg ons</h3>
+        <i class="fab fa-twitter-square fa-2x"></i>
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-spotify fa-2x"></i>
+    </section>
+    
+    <section class="email">
+        <h3>Lowlands Nieuwsbrief?</h3>
+        <form action="">
+        <input type="email" value="Je emailadress">
+        <input type="submit" value="Versturen">
+        </form>
+    </section>
+    
+    
+</footer>
 </html>
-
+<!--
 @media (prefers-color-scheme:dark){} om bij dark mode andere kleur website te geven
 display:grid;
 grid-template-columns:repeat(auto-fill, mimax(200px, 1fr));
