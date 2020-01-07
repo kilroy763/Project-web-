@@ -25,7 +25,7 @@
                 <li> <a href="">Nieuws</a></li>
                 <li> <a href="">FAQ </a> </li>
                 <li> <a href="">Programma </a> </li>
-                <li> <a href="">Tickets</a></li>
+                <li> <a href="ticket.html">Tickets</a></li>
                 <li> <a href="">Plattegrond </a> </li>
                 <li> <a href="">English </a> </li>
                 <li> <a href="">Meer <i class="fas fa-chevron-down"></i> </a>
@@ -44,7 +44,7 @@
                 <li> <a href="">Nieuws</a></li>
                 <li> <a href="">FAQ </a> </li>
                 <li> <a href="">Programma </a> </li>
-                <li> <a href="">Tickets</a></li>
+                <li> <a href="ticket.html">Tickets</a></li>
                 <li> <a href="">Plattegrond </a> </li>
                 <li> <a href="">English </a> </li>
                 <li> <a href=""> Achtergrond</a></li>
@@ -58,40 +58,48 @@
     <main>
         <section class="top">
             <h1 class="kop">LOWLANDS 2019 16+17+18 AUGUSTUS</h1>
-            <button type="button" onclick="alert('Wat dacht je nou zelf? !UITVERKOCHT!')" class="buttonkop">Koop nu je tickets!</button>
+            <button type="button" id="buttonkop" class="buttonkop">Koop nu je tickets!</button>
         </section>
 
         <section class="rollen">
             <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
+                <a href="eminem.html">
                 <q>Beste MC die nog leeft.</q>
                 <h2>EMINEM</h2>
                 <img src="img/eminem.jpg" alt="">
+                </a>
             </article>
 
             <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
+                <a href="2pac.html">
                 <q>Terug van weggeweest</q>
                 <h2>2Pac</h2>
                 <img src="img/2pac.jpg" alt="">
+                </a>
             </article>
             
             <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
+                <a href="">
                 <q>Gone to soon</q>
                 <h2>MAC MILLER</h2>
                 <img src="img/mac.jpg" alt="">
+                </a>
             </article>
             
             <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
+                <a href="">
                 <q>Jonko man</q>
                 <h2>SNOOP DOGG</h2>
                 <img src="img/snoopdogg.jpg" alt="">
+                </a>
             </article>
         </section>
 
@@ -100,33 +108,55 @@
             <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
+                <a href="">
                 <q>De LEGENDARISCHE groep</q>
                 <h2>N.W.A</h2>
                 <img src="img/NWA.jpg" alt="">
+                </a>
             </article>
 
             <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
+                <a href="">
                 <q>Zeldzaam goed</q>
                 <h2>KendrickLamar</h2>
                 <img src="img/kendrick.jpg" alt="">
+                </a>
             </article>
             
             <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
+                <a href="">
                 <q>Wet Dreamz?</q>
                 <h2>J. Cole</h2>
                 <img src="img/jcole.jpg" alt="">
+                </a>
             </article>
             
             <article class="artiesten">
                 <i class="fas fa-heart fa-2x"></i>
                 <i class="fas fa-play fa-2x"></i>
+                <a href="">
                 <q>Sorry, Budget was op</q>
                 <h2>Lil Pump</h2>
                 <img src="img/poeop.jpg" alt="">
+                </a>
+            </article>
+        </section>
+        
+        <section class="newssectie">
+            <article class="news">
+                <q>Hij was nog zo jong</q>
+                <h2>Juice WRLD overleden</h2>
+                <img src="img/juicewrld.jpg" alt="">
+            </article>
+            
+            <article class="news">
+                <q>Hij was nog zo jong</q>
+                <h2>Juice WRLD overleden</h2>
+                <img src="img/juicewrld.jpg" alt="">  
             </article>
         </section>
     </main>
@@ -152,6 +182,8 @@
     
 </footer>
 </html>
+
+<script src="index.js"></script>
 <!--
 @media (prefers-color-scheme:dark){} om bij dark mode andere kleur website te geven
 display:grid;
