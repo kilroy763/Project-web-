@@ -17,7 +17,7 @@ header {
 }
 
 #test {
-    margin-left: 50%;
+    margin-left: 50vw;
     margin-bottom: 1%;
 }
 #test:hover{
