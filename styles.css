@@ -438,13 +438,16 @@ article:hover{
 }
 
 
-#muziek {
+#muziek, .versturen, .knop {
     background-color: blue;
     color: white;
     padding:  10px;
     border: none;
     outline: none;
       border-radius: 25px;
+}
+.knop{
+    background-color: #4cd066;
 }
 
 iframe {
