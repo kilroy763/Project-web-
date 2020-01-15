@@ -16,9 +16,9 @@
 <body>
 
     <header>
-       
-        <a href="index.html"> <i id="test" class="fas fa-hand-middle-finger fa-2x"></i></a>
-        
+
+        <a href="index.html"> <i id="test" class="fas fa-hand-middle-finger fa-3x"></i></a>
+
         <nav class="nav1">
             <ul class="navkopjes1">
                 <li> <a href="">Blokkenschema </a> </li>
@@ -53,20 +53,34 @@
             </ul>
         </nav>
     </header>
-    
-    
+
+
     <main>
-    <form action="">
-    <fieldset>
-        <legend>
-            Gegevens
-        </legend>
-            <p>voornaam: </p><input type="text" size="30"><br>
-     <p>  achternaam:</p>  <input   type="text" size="30"><br>
-      <p>Email: </p>    <input   type="text" size="30">
-           <input type="submit" value="Versturen">
-    </fieldset>
-    </form>
+        <section class="top">
+            <h1 class="kop">LOWLANDS 2019 16+17+18 AUGUSTUS</h1>
+            <h2 class="kop" >Alle tickets zijn uitverkocht!</h2>
+            <h3 class="kop" >Maar je kan ze nog wel winnen!</h3>
+        </section>
+        
+        <section class="winnen">
+            <p>Om de tickets te winnen moet je je naam invoeren reden doorgeven en je gekste festival foto uploaden en dan beslissen wij of jij erbij past!</p>
+        </section>
+
+        <form action="">
+            <fieldset>
+                <legend>
+                    Gegevens
+                </legend>
+                <label>voornaam: </label><br><input type="text" size="30" placeholder="voornaam"><br>
+                <label> achternaam:</label><br> <input type="text" size="30" placeholder="achternaam"><br>
+                <label>Email: </label> <br><input type="email" size="30" placeholder="Emailadress" ><br>
+                <label>Reden:</label><br>
+                <textarea></textarea><br>
+                 <label for="">Foto:</label><br>
+                  <input type="file" name="pic" accept="image/*"><br>       <!-- https://www.w3schools.com/tags/att_input_accept.asp -->
+                <input type="submit" value="Versturen" class="versturen">
+            </fieldset>
+        </form>
     </main>
 </body>
 
@@ -78,17 +92,18 @@
         <i class="fab fa-instagram fa-2x"></i>
         <i class="fab fa-spotify fa-2x"></i>
     </section>
-    
+
     <section class="email">
         <h3>Lowlands Nieuwsbrief?</h3>
         <form action="">
-        <input type="email" value="Je emailadress">
-        <input type="submit" value="Versturen">
+            <input type="email" value="Je emailadress">
+            <input type="submit" value="Versturen">
         </form>
     </section>
-    
-    
+
+
 </footer>
+
 </html>
 
 <script src="index.js"></script>

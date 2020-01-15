@@ -20,7 +20,9 @@ header {
     margin-left: 50%;
     margin-bottom: 1%;
 }
-
+#test:hover{
+    color: #4cd066;
+}
 .navkopjes1 a,
 a,
 a {
@@ -69,17 +71,14 @@ nav li a:hover {
 
 
 ul li ul {
-    visibility: hidden;
-    position: relative;
-    transition: all 0.5s ease;
+
     display: none;
     background-color: #0827cc;
     list-style: none;
     padding: 10px 0px;
 }
 
-ul li:hover > ul,
-ul li ul:hover {
+ul li:hover > ul {
     visibility: visible;
     opacity: 1;
     display: block;
@@ -89,14 +88,13 @@ ul li ul:hover {
 
 ul li ul li {
     clear: both;
-
     list-style: none;
     padding: 10px;
-    width 200px;
+    width 5em;
 }
 
 
-
+/*https://css-tricks.com/solved-with-css-dropdown-menus/*/
 
 
 .mainfoto {
@@ -107,35 +105,21 @@ ul li ul li {
 }
 
 
-@media screen and (min-width: 1000px) {
 
-    .navmobiel {
-        display: none;
-    }
-
-    .nav1 {
-        display: block;
-    }
-
-    .navkopjes1 {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-align: center;
-        margin: auto;
-
-
-    }
-
-}
-
-.kop {
+.top h1, .top h2, .top h3 {
     color: white;
     background-color: #4cd066;
     text-align: center;
     font-size: 1.5em;
     padding: 10px;
+}
+
+.top h2{
+    font-size: 1.1em;
+}
+
+.top h3{
+    font-size: 1em;
 }
 
 .buttonkop {
@@ -153,17 +137,18 @@ ul li ul li {
 
 .top {
     width: 300px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 3em;
+
 }
 
 .buttonkop:hover {
     background-color: #0827cc;
     color: white;
+    transform: rotate(180deg);
 }
 
-.artiesten {
+.artiesten, .news2 {
     background-color: #4cd066;
     width: 560px;
     padding: 30px;
@@ -214,39 +199,6 @@ ul li ul li {
     margin-bottom: 20px;
 }
 
-
-
-@media screen and (max-width: 380px) {
-
-    .artiesten, .news {
-        width: 300px;
-
-    }
-    
-    .news {
-        margin-top: 1em;
-    }
-
-    .artiesten img, .news img {
-        width: 250px;
-        height: 140px;
-    }
-
-    .artiesten q {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 10px;
-    }
-
-    .artiesten h2, .news h2 {
-        font-size: 20px;
-        padding-bottom: 5px;
-    }
-    
-
-}
-
-
     .newssectie {
         margin-bottom: 1em;
     }
@@ -256,7 +208,8 @@ footer {
     background-color: #0827cc;
     box-shadow: inset 0 0 20px #000000;
     width: 100%;
-    height: 10em;
+    height: 20em;
+    text-align: center;
     
 }
 
@@ -275,16 +228,7 @@ footer {
 }
 
 
-@media screen and (min-width: 400px) {
-    
-    footer{
-        display: inline-flex;
-    }
-    .email{
-        position: absolute;
-        right: 0px;
-    }
-}
+
 
 
 section > article > a {
@@ -297,6 +241,8 @@ section > article > a {
     text-align: center;
     
 }
+
+
 
 
 .blokje{
@@ -318,7 +264,7 @@ section > article > a {
 
 .serieuzetekst{
     font-family: sans-serif;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 1em;
 }
@@ -336,9 +282,182 @@ section > article > a {
     text-align: center;
 }
 
+
+
+form{
+      display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+    margin-bottom: 3em;
+}
+
+/*https://www.w3schools.com/howto/howto_css_responsive_form.asp*/
+form input{
+      vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
 fieldset{
     width: 50%;
     display: block;
     margin: 0 auto;
-    background-color: green;
+    background-color: #4cd066;
+}
+legend{
+color: white;
+      background-color: #4cd066; 
+}
+
+label{
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 634px) {
+
+    .artiesten, .news {
+        width: 300px;
+
+    }
+    
+    .news {
+        margin-top: 1em;
+    }
+
+    .artiesten img, .news img {
+        width: 250px;
+        height: 140px;
+    }
+
+    .artiesten q {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .artiesten h2, .news h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    
+    .serieuzetekst{
+        width: 60%;
+    }
+    .blokje{
+        width: 95%;
+    }
+    
+    .fotogroot{
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 400px) {
+    
+
+    
+    footer {
+    padding: 10px 0px;
+    background-color: #0827cc;
+    box-shadow: inset 0 0 20px #000000;
+    width: 100%;
+    height: 15em;
+    
+}
+    
+                .news {
+        margin-top: 1em;
+    }
+    
+    
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .navmobiel {
+        display: none;
+    }
+    
+        .email{
+        position: absolute;
+        right: 0px;
+    }
+            .news {
+        margin-top: 1em;
+    }
+        footer {
+    padding: 10px 0px;
+    background-color: #0827cc;
+    box-shadow: inset 0 0 20px #000000;
+    width: 100%;
+    height: 15em;
+    display: inline-flex;
+    
+}
+    .nav1 {
+        display: block;
+    }
+
+    .navkopjes1 {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: auto;
+    
+
+    }
+
+}
+
+.winnen{
+    color: white;
+    background-color: #4cd066;;
+    width: 50%; 
+    margin: 0 auto;
+    margin-top: 3em;
+    text-align: center;
+    margin-bottom: 3em;
+    padding: 10px;
+}
+
+
+article:hover{
+    background-color: blue;
+}
+
+
+#muziek {
+    background-color: blue;
+    color: white;
+    padding:  10px;
+    border: none;
+    outline: none;
+      border-radius: 25px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em
+}
+
+.versturen:hover {
+    transform: translate(50em);
+    
+}
+
+.rood{
+    color: red;
+}
+
+input:focus, textarea:focus {
+    color: white;
+    background-color:blue;
 }
