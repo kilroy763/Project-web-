@@ -40,8 +40,18 @@ document.getElementById("buttonkop").onclick = function () {
 
 
 document.getElementById("hartje").onclick = function () {
-       var element = document.getElementById("hartje");
-        element.classList.toggle("rood");
+    var element = document.getElementById("hartje");
+    element.classList.toggle("rood");
 };
 
+//bron daisy samengewerkt ja//
 
+
+document.getElementById("start").onclick = function on() {
+    document.getElementById("menu-overlay").style.display = "block";
+    console.log("werkt");
+};
+
+document.getElementById("menu-overlay").onclick = function off() {
+    document.getElementById("menu-overlay").style.display = "none";
+};

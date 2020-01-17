@@ -1,20 +1,21 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0em;
+    padding: 0em;
     font-family: 'Press Start 2P', cursive;
 }
 
 body {
     background-image: url(img/background-4.png)
 }
+/* achtergrond afbeelding van lowlands*/
 
 header {
     padding: 1em 0em;
     background-color: #0827cc;
-    box-shadow: inset 0 0 2em #000000;
-
+    box-shadow: inset 0em 0em 2em #000000;
 }
+/* blauwe balk bovenin achter de nav*/
 
 #test {
     display: block;
@@ -23,403 +24,190 @@ header {
 #test:hover{
     color: #4cd066;
 }
-.navkopjes1 a,
-a,
-a {
-    font-size: 12px;
-    font-family: 'Press Start 2P', cursive;
-    font-weight: 500;
-    color: #edf0f1;
-    text-decoration: none;
-    padding: 0 15px;
-}
+/* logo bovenin de website*/
 
-label,
-i {
+nav ul li, a, label, i {
+    font-size: 0.9em;
     font-family: 'Press Start 2P', cursive;
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
+    padding: 0em 0.625em;
+}
+/* alle navkopjes en linkjes correcte fontsize, font en kleur.*/
+
+label,i {
     display: inline-flex;
-
 }
+/* display voor form labels en iconen*/
 
-.navkopjesmobiel {
+nav ul {
     white-space: nowrap;
     overflow-x: auto;
-    height: 50px;
+    height:3.125em ;
 }
+/* height zodat het niet onder elkaar valt en carrousel effect*/
 
-.navkopjesmobiel li {
+/*https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp*/
+
+nav ul li {
     display: inline-block;
     float: none;
 }
-
-
-.nav1 {
-    display: none;
-}
-
-
-
+/* height zodat het niet onder elkaar valt en carrousel effect*/
 
 
 nav li a:hover {
     color: #4cd066;
 }
-
-
-
-ul li ul {
-
-    display: none;
-    background-color: #0827cc;
-    list-style: none;
-    padding: 10px 0px;
-}
-
-ul li:hover > ul {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    list-style: none;
-    padding: 10px;
-}
-
-ul li ul li {
-    clear: both;
-    list-style: none;
-    padding: 10px;
-    width 5em;
-}
-
-
-/*https://css-tricks.com/solved-with-css-dropdown-menus/*/
-
-
-.mainfoto {
-    margin-top: 1%;
-    border: 10px solid #4cd066;
-    border-radius: 5%;
-
-}
-
-
+/* bij hover kleurverandering*/
 
 .top h1, .top h2, .top h3 {
     color: white;
     background-color: #4cd066;
     text-align: center;
     font-size: 1.5em;
-    padding: 10px;
+    padding: 0.625em;
 }
-
 .top h2{
     font-size: 1.1em;
 }
-
 .top h3{
     font-size: 1em;
 }
+/* section op ticketform met verschillende font groottes*/
 
-.buttonkop {
+.top button {
     background-color: white;
     color: #0827cc;
     border: none;
     text-align: center;
     text-decoration: none;
     font-size: 1em;
-    padding: 20px 40px;
-    border: solid 5px #4cd066;
-
-
+    padding: 1.250em 2.500em;
+    border: solid 0.313em #4cd066;
 }
+/* button op homepagina*/
 
 .top {
-    width: 300px;
-    margin: 0 auto;
+    width: 18.750em;
+    margin: 0em auto;
     margin-top: 3em;
 
 }
+/* breedte section bovenaan homepagina*/
 
-.buttonkop:hover {
+#buttonkop:hover {
     background-color: #0827cc;
     color: white;
     transform: rotate(180deg);
 }
-
-.artiesten, .news2 {
-    background-color: #4cd066;
-    width: 560px;
-    padding: 30px;
-    margin-left: 10px;
-    display: inline-block;
-}
-
-.newssectie{
-    display: inline-flex;
-    position:relative;
-}
-
-.news{
-    background-color: #4cd066;
-    width: 560px;
-    padding: 30px;
-    margin-left: 10px;
-    display: inline-block;
-}
-
-.news img{
-    width: 500px;
-    height: 280px;
-}
-.news q {
-        padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-}
-
-.artiesten img {
-    width: 500px;
-    height: 280px;
-}
-
-.artiesten q {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-}
+/* buttonkop andere kleur op hover en draait*/
 
 .rollen {
-
     white-space: nowrap;
     overflow-x: auto;
     float: none;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 1.875em;
+    margin-bottom: 1.250em;
 }
-
-    .newssectie {
-        margin-bottom: 1em;
-    }
+/* Carrousel effect voor artiesten section*/
 
 footer {
-    padding: 10px 0px;
+    padding: 0.625em 0em;
     background-color: #0827cc;
-    box-shadow: inset 0 0 20px #000000;
+    box-shadow: inset 0em 0em 1.250em #000000;
     width: 100%;
     height: 20em;
     text-align: center;
-    
 }
+/* footer*/
 
 .social, .email {
-    margin: 0px 20px;
-
-    
+    margin: 0em 1.250em;
 }
-
+/* 2 sections in footer*/
 
 .social h3, .email h3{
-    margin-top: 20px;
+    margin-top: 1.250em;
     color: white;
-    margin-bottom: 1.5em;
-    
+    margin-bottom: 1.5em;   
 }
-
-
-
-
-
-section > article > a {
-    color:black;
-    font-size: 1em;
-}
-
-.newssectie{
-    display: block;
-    text-align: center;
-    
-}
-
-
-
+/* text in sections*/
 
 .blokje{
     display: block;
-    margin: 0 auto;
+    margin: 0em auto;
     width: 75%;
     background-color: #4CD066;
     margin-bottom: 2em;
     padding-bottom: 2em;
-        box-shadow: inset 0 0 2em #000000;
+    box-shadow: inset 0em 0em 2em #000000;
 }
+/* section voor artiest pagina*/
 
-.fotogroot{
+.blokje img{
     display: block;
     height: 40%;
     width: 50%;
-    margin: 0 auto;
+    margin: 0em auto;
 }
+/* foto op artiest paginaa*/
 
-.serieuzetekst{
+.blokje p{
     font-family: sans-serif;
     width: 50%;
-    margin: 0 auto;
+    margin: 0em auto;
     margin-top: 1em;
 }
+/* tekst op artiest pagina*/
 
-.kopartiest{
+.blokje h1, .blokje time{
     display: block;
     text-align: center;
     margin-top: 1em;
     padding-top: 1em;
 }
-
-#geluid {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-
+/* koppen op artiest pagina*/
 
 form{
-      display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+    display: flex;
     margin-bottom: 3em;
 }
-
 /*https://www.w3schools.com/howto/howto_css_responsive_form.asp*/
+
 form input{
-      vertical-align: middle;
-  margin: 5px 10px 5px 0;
-  padding: 10px;
+  margin: 0.313em 0.625em 0.313em 0em;
+  padding: 0.625em;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 0.063em solid #ddd;
 }
+/* inputvelden voor de form*/
+
 fieldset{
     width: 50%;
     display: block;
-    margin: 0 auto;
+    margin: 0em auto;
     background-color: #4cd066;
 }
+/* breedte vd form*/
+
 legend{
-color: white;
-      background-color: #4cd066; 
+    color: white;
+    background-color: #4cd066; 
 }
+/* achtergrond form*/
 
 label{
     margin-top: 2em;
 }
+/* ruimte tussen labels en input*/
 
-@media screen and (max-width: 634px) {
-
-    .artiesten, .news {
-        width: 300px;
-
-    }
-    
-    .news {
-        margin-top: 1em;
-    }
-
-    .artiesten img, .news img {
-        width: 250px;
-        height: 140px;
-    }
-
-    .artiesten q {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-bottom: 10px;
-        font-size: 10px;
-    }
-
-    .artiesten h2, .news h2 {
-        font-size: 20px;
-        padding-bottom: 5px;
-    }
-    
-    .serieuzetekst{
-        width: 60%;
-    }
-    .blokje{
-        width: 95%;
-    }
-    
-    .fotogroot{
-        width: 80%;
-    }
+section > article > a {
+    color:black;
+    font-size: 1em;
 }
-
-
-@media screen and (min-width: 400px) {
-    
-
-    
-    footer {
-    padding: 10px 0px;
-    background-color: #0827cc;
-    box-shadow: inset 0 0 20px #000000;
-    width: 100%;
-    height: 21em;
-    
-}
-    
-                .news {
-        margin-top: 1em;
-    }
-    
-    .email input{
-        display: block;
-        margin: 0 auto;
-    }
-
-    
-
-}
-
-
-@media screen and (min-width: 1000px) {
-
-    .navmobiel {
-        display: none;
-    }
-    
-        .email{
-        position: absolute;
-        right: 0px;
-    }
-            .news {
-        margin-top: 1em;
-    }
-        footer {
-    padding: 10px 0px;
-    background-color: #0827cc;
-    box-shadow: inset 0 0 20px #000000;
-    width: 100%;
-    height: 15em;
-    display: inline-flex;
-    
-}
-    .nav1 {
-        display: block;
-    }
-
-    .navkopjes1 {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-align: center;
-        margin: auto;
-    
-
-    }
-
-}
+/* kleur en grootte kopjes vd articles op de homepagina*/
 
 .winnen{
     color: white;
@@ -429,45 +217,264 @@ label{
     margin-top: 3em;
     text-align: center;
     margin-bottom: 3em;
-    padding: 10px;
+    padding: 0.625em;
 }
+/* section op ticketpagina met tekst*/
 
-
-article:hover{
+.rollen article:hover, .newssectie article:hover{
     background-color: blue;
 }
+/* hover op article geeft kleurverandering*/
 
-
-#muziek, .versturen, .knop {
+.rollen button, form input[type=submit] {
     background-color: blue;
     color: white;
-    padding:  10px;
+    padding:  0.625em;
     border: none;
     outline: none;
-      border-radius: 25px;
+    border-radius: 1.563em;
 }
-.knop{
+/*alle buttons op de site*/
+
+.email form input[type=submit]{
     background-color: #4cd066;
 }
+/*andere kleur voor footer knop*/
 
 iframe {
     display: block;
     margin: 0 auto;
     margin-top: 2em;
-    width: 50%;
-    height: 40%;
+    width: 50vw;
+    height: 35vw;
 }
+/*youtube video*/
 
-.versturen:hover {
+form fieldset input[type=submit]:hover {
     transform: translate(20em);
-    
 }
+/*alle buttons op de site*/
 
 .rood{
     color: red;
 }
+/*class voor hartje*/
 
 input:focus, textarea:focus {
     color: white;
     background-color:blue;
 }
+/*form toegankelijk met tab knop*/
+
+.rollen article, .newssectie article {
+    width: 18.750em;
+    }
+/*alle buttons op de site*/
+
+.newssectie article {
+    margin-top: 1em;
+    }
+/*articles newssectie padding van de artiesten af*/
+
+.rollen article img, .newssectie article img {
+    width: 15.625em;
+    height: 8.750em;
+    }
+/*afbeeldingen bij articles */
+
+.rollen article h2, .newssectie article h2 {
+        font-size: 1.250em;
+        padding-bottom: 0.313em;
+    }
+/*kopjes bij articles*/
+    
+.rollen article, .newssectie article {
+    background-color: #4cd066;
+    padding: 0.625em;
+    display: inline-block;
+}
+/*articles zelf*/
+
+.newssectie article{
+    background-color: #4cd066;
+    padding: 0.625em;
+    display: inline-block;
+}
+/*article news kleur*/
+
+.newssectie{
+    padding: 0.625em;
+    display: block;
+    text-align: center;
+}
+/*newssectie center*/
+
+.newssectie article q {
+        padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    display: block;
+}
+/*news quote*/
+
+.rollen article q {
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    display: block;
+    font-size: 0.6em;
+}
+/*artiesten quote*/
+
+.top h1:before {
+    content: "-Lowlands-";
+}
+/*extra tekst voor de tekst*/
+
+:target {
+  border: 0.125em solid #4cd066;
+  background-color: #0827cc;
+}
+/*schiet naar formulier*/
+
+#buttonkop2 a{
+    color: black;
+}
+/*breedte voor de link*/
+
+#buttonkop2:hover {
+    background-color: #0827cc;
+    color: white;
+    transform: rotate(180deg);
+}
+/*https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target*/
+
+
+    .artiesten, .news {
+    background-color: #4cd066;
+    padding: 1.875em;
+    margin-left: 0.625em;
+    display: inline-block;
+}
+/*artiesten en news sectie*/
+
+#menu-overlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.8);
+      z-index: 2;
+      cursor: pointer;
+}
+/*menu overlay*/
+
+#start{
+    cursor: pointer;
+}
+/*toont dat het clickable is*/
+
+#start:hover{
+    color: #4cd066;
+}
+/*toont dat het clickable is door kleurverandering*/
+
+#menu-overlay li a{
+    font-size: 1.5em;
+    text-align: center;
+    display: block;
+}
+/*fontsize overlay */
+
+#menu-overlay li {
+    margin-top: 10em;
+    display: block;
+}
+/*witruimte */
+
+/*https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+
+/*alles groter dan 634 pixels */
+@media screen and (min-width: 39.625em) {
+    
+.rollen article, .newssectie article{
+    background-color: #4cd066;
+    width: 35em;
+    padding: 1.875em;
+    margin-left: 0.625em;
+    display: inline-block;
+}
+/*article en news groter */
+    
+.newssectie{
+    padding: 0.625em;
+    display: block;
+    text-align: center;
+}
+/*newssectie display */
+    
+.newssectie article img, .rollen article img {
+    width: 31.250em;
+    height: 17.500em;
+}
+/*afbeeldingen groter */
+
+.rollen article q {
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    display: block;
+    font-size: 1em;
+}
+/*quote groter */
+    
+.rollen article h2 {
+    font-size: 1.5em;
+}
+/*kop groter */
+    
+footer {
+    padding: 0.625em 0em;
+    background-color: #0827cc;
+    box-shadow: inset 0em 0em 1.25em #000000;
+    width: 100%;
+    height: 21em;
+}
+/*footer aangepast */
+}
+/*alles groter dan 634 pixels */
+
+/*alles groter dan 1050 pixels */
+@media screen and (min-width: 65.625em) {
+
+    
+.email{
+    position: absolute;
+    right: 0em;
+    }
+/*email positie */
+    
+footer {
+    padding: 0.625em 0em;
+    background-color: #0827cc;
+    box-shadow: inset 0em 0em 1.25em #000000;
+    width: 100%;
+    height: 15em;
+    display: inline-flex;
+}
+/*footer aangepast */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    }
+/*geen caroussel voor laptop*/
+}
+/*alles groter dan 1050 pixels */
+
+
