@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
@@ -51,17 +51,17 @@
             <p>Om de tickets te winnen moet je je naam invoeren reden doorgeven en je gekste festival foto uploaden en dan beslissen wij of jij erbij past!</p>
         </section>
 
-        <form action="" id="testdit">
+        <form action="/ticket.html" id="testdit">
             <fieldset>
                 <legend>
                     Gegevens
                 </legend>
-                <label>Voornaam: </label><br><input type="text" size="30" placeholder="voornaam"><br>
-                <label> Achternaam:</label><br> <input type="text" size="30" placeholder="achternaam"><br>
-                <label>Email: </label> <br><input type="email" size="30" placeholder="Emailadress"><br>
-                <label>Reden:</label><br>
-                <textarea></textarea><br>
-                <label>Foto:</label><br>
+                <label for="voornaam">Voornaam: </label><br><input name="voornaam "type="text" size="30" placeholder="voornaam"><br>
+                <label for="achternaam"> Achternaam:</label><br> <input type="text" name="achternaam" size="30" placeholder="achternaam"><br>
+                <label for="email">Email: </label> <br><input type="email" form="email" size="30" placeholder="Emailadress"><br>
+                <label for="reden"l>Reden:</label><br>
+                <textarea name="reden"></textarea><br>
+                <label for="pic">Foto:</label><br>
                 <input type="file" name="pic" accept="image/*"><br> <!-- https://www.w3schools.com/tags/att_input_accept.asp -->
                 <input type="submit" value="Versturen">
             </fieldset>
@@ -87,4 +87,4 @@
     </section>
 </footer>
 </html>
-<script src="index.js"></script>
+<script src="js/script.js"></script>
