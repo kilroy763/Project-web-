@@ -17,9 +17,10 @@
 
     <header>
 
-        <a href="index.html"> <i id="test" class="fab fa-accessible-icon fa-3x"></i></a>
-
-         <nav>
+        <a href="index.html"> <i id="test" class="fab fa-earlybirds fa-3x"></i></a>
+        <!-- icoon -->
+        
+        <nav>
             <ul>
                 <li> <a href="">Blokkenschema </a> </li>
                 <li> <a href="">Nieuws</a></li>
@@ -27,15 +28,16 @@
                 <li> <a href="">Programma </a> </li>
                 <li> <a href="ticket.html">Tickets</a></li>
                 <li> <a href="">Plattegrond </a> </li>
-                <li > <a href="">English </a> </li>
+                <li> <a href="">English </a> </li>
                 <li id="start"> Meer </li>
-                    <ul id="menu-overlay" >
-                        <li> <a href=""> Achtergrond</a></li>
-                        <li><a href="">Green En Clean </a></li>
-                        <li><a href=""> Over LowLands</a></li>
-                    </ul>
+                <ul id="menu-overlay">
+                    <li> <a href=""> Achtergrond</a></li>
+                    <li><a href="">Green En Clean </a></li>
+                    <li><a href=""> Over LowLands</a></li>
+                </ul>
             </ul>
         </nav>
+        <!-- Navigatie met overlay -->
     </header>
 
 
@@ -44,28 +46,30 @@
             <h1> 2019 16+17+18 AUGUSTUS</h1>
             <h2>Alle tickets zijn uitverkocht!</h2>
             <h3>Maar je kan ze nog wel winnen!</h3>
-             <button type="button" id="buttonkop2"> <a href="#testdit">Win de tickets nu!</a></button>
+            <button type="button" id="buttonkop2"> <a href="#testdit">Win de tickets nu!</a></button>
         </section>
+        <!-- Sectie met tekst en button voor tickets winnen -->
+        
 
-        <section class="winnen">
-            <p>Om de tickets te winnen moet je je naam invoeren reden doorgeven en je gekste festival foto uploaden en dan beslissen wij of jij erbij past!</p>
-        </section>
+            <p class="winnen">Om de tickets te winnen moet je je naam invoeren reden doorgeven en je gekste festival foto uploaden en dan beslissen wij of jij erbij past!</p>
+                <!-- tekst met uitleg-->
 
         <form action="/ticket.html" id="testdit">
             <fieldset>
                 <legend>
                     Gegevens
                 </legend>
-                <label for="voornaam">Voornaam: </label><br><input name="voornaam "type="text" size="30" placeholder="voornaam"><br>
-                <label for="achternaam"> Achternaam:</label><br> <input type="text" name="achternaam" size="30" placeholder="achternaam"><br>
-                <label for="email">Email: </label> <br><input type="email" form="email" size="30" placeholder="Emailadress"><br>
-                <label for="reden"l>Reden:</label><br>
+                <label for="voornaam">Voornaam: </label><br><input name="voornaam " type="text"  placeholder="voornaam"><br>
+                <label for="achternaam"> Achternaam:</label><br> <input type="text" name="achternaam"  placeholder="achternaam"><br>
+                <label for="email">Email: </label> <br><input type="email" form="email" placeholder="Emailadress"><br>
+                <label for="reden" l>Reden:</label><br>
                 <textarea name="reden"></textarea><br>
                 <label for="pic">Foto:</label><br>
                 <input type="file" name="pic" accept="image/*"><br> <!-- https://www.w3schools.com/tags/att_input_accept.asp -->
                 <input type="submit" value="Versturen">
             </fieldset>
         </form>
+                <!-- formulier met inputvelden en optie om foto up te loaden.  -->
     </main>
 </body>
 
@@ -77,6 +81,7 @@
         <i class="fab fa-instagram fa-2x"></i>
         <i class="fab fa-spotify fa-2x"></i>
     </section>
+    <!-- social media deel footer -->
 
     <section class="email">
         <h3>Lowlands Nieuwsbrief?</h3>
@@ -85,6 +90,9 @@
             <input type="submit" value="Versturen">
         </form>
     </section>
+    <!-- nieuwsbriefdeel footer -->
+
+
 </footer>
 </html>
 <script src="js/script.js"></script>

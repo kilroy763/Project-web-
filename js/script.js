@@ -12,11 +12,11 @@ function initAudioPlayer() {
     audio.src = "test.mp3";
     audio.loop = true;
     audio.play();
-    // Set object references
+    
     playbtn = document.getElementById("muziek");
-    // Add Event Handling
+    
     playbtn.addEventListener("click", playPause);
-    // Functions
+    
     function playPause() {
         if (audio.paused) {
             audio.play();
