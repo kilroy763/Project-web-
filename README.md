@@ -1,5 +1,3 @@
-# Project-web-
-Joe Joe
 Bronnen:
 https://www.w3schools.com/css/css_align.asp
 https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp
@@ -25,5 +23,8 @@ https://www.nme.com/news/music/tupacs-estate-confirm-20th-anniversary-greatest-h
 https://i.ytimg.com/vi/tV6DOdT6fRA/maxresdefault.jpg
 ( https://www.youtube.com/watch?v=tV6DOdT6fRA )
 https://www.complex.com/music/2018/09/mac-miller-streams-skyrocket-970-percent-following-death
+https://www.youtube.com/watch?v=KIIktcWu6hc
+https://nl.wikipedia.org/wiki/Eminem
+https://css-tricks.com/almanac/selectors/f/focus-within/
 
 https://kilroy763.github.io/Project-web-/
