@@ -17,14 +17,19 @@ header {
 }
 /* blauwe balk bovenin achter de nav*/
 
-#test {
+header a {
     display: block;
     text-align: center;
+    margin-bottom: 1em;
 }
-#test:hover{
+header a:hover{
     color: #4cd066;
 }
 /* logo bovenin de website*/
+
+header a:focus{
+    color: #4cd066;
+}
 
 nav ul li, a, label, i {
     font-size: 0.9em;
@@ -45,6 +50,7 @@ nav ul {
     white-space: nowrap;
     overflow-x: auto;
     height:3.125em ;
+    text-align: center;
 }
 /* height zodat het niet onder elkaar valt en carrousel effect*/
 
@@ -62,22 +68,23 @@ nav li a:hover {
 }
 /* bij hover kleurverandering*/
 
-.top h1, .top h2, .top h3 {
+main section:first-child h1, main section:first-child h2, main section:first-child h3 {
     color: white;
     background-color: #4cd066;
     text-align: center;
     font-size: 1.5em;
     padding: 0.625em;
 }
-.top h2{
+main section:first-child h2{
     font-size: 1.1em;
 }
-.top h3{
+
+main section:first-child h3{
     font-size: 1em;
 }
 /* section op ticketform met verschillende font groottes*/
 
-.top button {
+main section:first-child button {
     background-color: white;
     color: #0827cc;
     border: none;
@@ -89,7 +96,7 @@ nav li a:hover {
 }
 /* button op homepagina*/
 
-.top {
+main section:first-child {
     width: 18.750em;
     margin: 0em auto;
     margin-top: 3em;
@@ -97,14 +104,14 @@ nav li a:hover {
 }
 /* breedte section bovenaan homepagina*/
 
-#buttonkop:hover {
+main section:first-child button:hover {
     background-color: #0827cc;
     color: white;
     transform: rotate(180deg);
 }
 /* buttonkop andere kleur op hover en draait*/
 
-.rollen {
+main section:nth-child(2), main section:nth-child(3) {
     white-space: nowrap;
     overflow-x: auto;
     float: none;
@@ -123,19 +130,19 @@ footer {
 }
 /* footer*/
 
-.social, .email {
+footer section:first-child, footer section:last-child {
     margin: 0em 1.250em;
 }
 /* 2 sections in footer*/
 
-.social h3, .email h3{
+footer section:first-child h3, footer section:last-child h3{
     margin-top: 1.250em;
     color: white;
     margin-bottom: 1.5em;   
 }
 /* text in sections*/
 
-.blokje{
+main article{
     display: block;
     margin: 0em auto;
     width: 75%;
@@ -146,7 +153,7 @@ footer {
 }
 /* section voor artiest pagina*/
 
-.blokje img{
+main article img{
     display: block;
     height: 40%;
     width: 50%;
@@ -154,15 +161,17 @@ footer {
 }
 /* foto op artiest paginaa*/
 
-.blokje p{
+main article p{
     font-family: sans-serif;
     width: 50%;
     margin: 0em auto;
     margin-top: 1em;
+    color: black;
+    text-align: left;
 }
 /* tekst op artiest pagina*/
 
-.blokje h1, .blokje time{
+main article h1, main article time{
     display: block;
     text-align: center;
     margin-top: 1em;
@@ -209,7 +218,7 @@ section > article > a {
 }
 /* kleur en grootte kopjes vd articles op de homepagina*/
 
-.winnen{
+main p{
     color: white;
     background-color: #4cd066;;
     width: 50%; 
@@ -221,12 +230,12 @@ section > article > a {
 }
 /* section op ticketpagina met tekst*/
 
-.rollen article:hover, .newssectie article:hover{
+main section:nth-child(n+2) article:hover{
     background-color: blue;
 }
 /* hover op article geeft kleurverandering*/
 
-.rollen button, form input[type=submit] {
+main section:nth-child(n+2) button, form input[type=submit] {
     background-color: blue;
     color: white;
     padding:  0.625em;
@@ -236,7 +245,7 @@ section > article > a {
 }
 /*alle buttons op de site*/
 
-.email form input[type=submit]{
+footer section:last-child form input[type=submit]{
     background-color: #4cd066;
 }
 /*andere kleur voor footer knop*/
@@ -255,68 +264,89 @@ form fieldset input[type=submit]:hover {
 }
 /*alle buttons op de site*/
 
+form input[type=submit]:hover{
+    color: white;
+    background-color:blue;
+}
+/*hover op form button veranderd kleur*/
+
 .rood{
     color: red;
 }
 /*class voor hartje*/
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, main section:first-child button:focus, footer section:last-child form input[type=submit]:focus-within {
     color: white;
-    background-color:blue;
+    background-color: #0827cc;
 }
 /*form toegankelijk met tab knop*/
 
-.rollen article, .newssectie article {
+footer section:last-child form{
+    display: block;
+    text-align: center;
+}
+nav ul li a:focus {
+    color:  #4cd066;
+}
+/*door tab veranderen nav items van kleur*/
+
+main form fieldset input[type=submit]:focus-within, main section:nth-child(n+2) button:focus-within{
+       color: black;
+    background-color: #4cd099;
+}
+/*door tab alle buttons andere kleur*/
+
+main section:nth-child(n+2) article:focus-within{
+    background-color: #0827cc;
+}
+/*Door tab article andere kleur*/
+/*https://css-tricks.com/focusing-on-focus-styles/*/
+    
+
+main section:nth-child(n+2) article {
     width: 18.750em;
     }
 /*alle buttons op de site*/
 
-.newssectie article {
+ main section:nth-child(4) article {
     margin-top: 1em;
     }
 /*articles newssectie padding van de artiesten af*/
 
-.rollen article img, .newssectie article img {
+main section:nth-child(n+2) article img {
     width: 15.625em;
     height: 8.750em;
     }
 /*afbeeldingen bij articles */
 
-.rollen article h2, .newssectie article h2 {
+main section:nth-child(n+2) article h2{
         font-size: 1.250em;
         padding-bottom: 0.313em;
     }
 /*kopjes bij articles*/
     
-.rollen article, .newssectie article {
+main section:nth-child(n+2) article{
     background-color: #4cd066;
     padding: 0.625em;
     display: inline-block;
 }
 /*articles zelf*/
 
-.newssectie article{
-    background-color: #4cd066;
-    padding: 0.625em;
-    display: inline-block;
-}
-/*article news kleur*/
-
-.newssectie{
+ main section:nth-child(4){
     padding: 0.625em;
     display: block;
     text-align: center;
 }
 /*newssectie center*/
 
-.newssectie article q {
+ main section:nth-child(4) article q {
         padding-top: 0.625em;
     padding-bottom: 0.625em;
     display: block;
 }
 /*news quote*/
 
-.rollen article q {
+ main section:nth-child(2) article q,  main section:nth-child(3) article q{
     padding-top: 0.625em;
     padding-bottom: 0.625em;
     display: block;
@@ -324,7 +354,7 @@ input:focus, textarea:focus {
 }
 /*artiesten quote*/
 
-.top h1:before {
+main section h1:before {
     content: "-Lowlands-";
 }
 /*extra tekst voor de tekst*/
@@ -335,12 +365,12 @@ input:focus, textarea:focus {
 }
 /*schiet naar formulier*/
 
-#buttonkop2 a{
+main section:first-child button a{
     color: black;
 }
 /*breedte voor de link*/
 
-#buttonkop2:hover {
+main section:first-child button:hover {
     background-color: #0827cc;
     color: white;
     transform: rotate(180deg);
@@ -348,15 +378,8 @@ input:focus, textarea:focus {
 /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target*/
 
 
-    .artiesten, .news {
-    background-color: #4cd066;
-    padding: 1.875em;
-    margin-left: 0.625em;
-    display: inline-block;
-}
-/*artiesten en news sectie*/
 
-#menu-overlay {
+nav ul ul {
       position: fixed;
       display: none;
       width: 100%;
@@ -371,24 +394,24 @@ input:focus, textarea:focus {
 }
 /*menu overlay*/
 
-#start{
+nav ul li:nth-child(8){
     cursor: pointer;
 }
 /*toont dat het clickable is*/
 
-#start:hover{
+nav ul li:nth-child(8):hover{
     color: #4cd066;
 }
 /*toont dat het clickable is door kleurverandering*/
 
-#menu-overlay li a{
+nav ul ul li a{
     font-size: 1.5em;
     text-align: center;
     display: block;
 }
 /*fontsize overlay */
 
-#menu-overlay li {
+nav ul ul li {
     margin-top: 10em;
     display: block;
 }
@@ -397,9 +420,10 @@ input:focus, textarea:focus {
 /*https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
 
 /*alles groter dan 634 pixels */
+
 @media screen and (min-width: 39.625em) {
     
-.rollen article, .newssectie article{
+main section:nth-child(n+2) article{
     background-color: #4cd066;
     width: 35em;
     padding: 1.875em;
@@ -408,73 +432,22 @@ input:focus, textarea:focus {
 }
 /*article en news groter */
     
-.newssectie{
-    padding: 0.625em;
-    display: block;
-    text-align: center;
-}
-/*newssectie display */
-    
-.newssectie article img, .rollen article img {
+main section:nth-child(n+2) article img{
     width: 31.250em;
     height: 17.500em;
 }
 /*afbeeldingen groter */
 
-.rollen article q {
-    padding-top: 0.625em;
-    padding-bottom: 0.625em;
-    display: block;
+main section:nth-child(2) article q, main section:nth-child(3) article q {
     font-size: 1em;
 }
 /*quote groter */
     
-.rollen article h2 {
-    font-size: 1.5em;
-}
-/*kop groter */
-    
-footer {
-    padding: 0.625em 0em;
-    background-color: #0827cc;
-    box-shadow: inset 0em 0em 1.25em #000000;
-    width: 100%;
-    height: 21em;
-}
-/*footer aangepast */
+
 }
 /*alles groter dan 634 pixels */
 
-/*alles groter dan 1050 pixels */
-@media screen and (min-width: 65.625em) {
-
-    
-.email{
-    position: absolute;
-    right: 0em;
-    }
-/*email positie */
-    
-footer {
-    padding: 0.625em 0em;
-    background-color: #0827cc;
-    box-shadow: inset 0em 0em 1.25em #000000;
-    width: 100%;
-    height: 15em;
-    display: inline-flex;
-}
-/*footer aangepast */
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: auto;
-    }
-/*geen caroussel voor laptop*/
-}
-/*alles groter dan 1050 pixels */
 
 
+/*
+https://www.youtube.com/watch?v=KIIktcWu6hc
